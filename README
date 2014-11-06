@@ -1,0 +1,23 @@
+===================
+GENERAL INFORMATION
+===================
+
+This is gcclust, a gui'ed consensus clustering solver based on the paper "Average Parameterization for Computing Medians" (see http://theinf1.informatik.uni-jena.de/publications/average-parameterization-jcss10.pdf).
+The software is completely open, feel free to browse, change and redistribute it. However, this program comes with no warranties or garanties whatsoever, use at your own risk.
+
+The author, Mathias Weller (mathias.weller@{uni-jena.de,lirmm.fr}), gratefully acknoledges support by the DFG, project DARE (NI-369/11).
+
+============
+INSTALLATION
+============
+
+To build the program you will need the following libraries (which may depend on other libraries):
+GTK+-2
+GTKMM+-2.4
+CMAKE-2.6
+
+To build the program, simply issue
+cmake .
+make
+
+This should generate the gcclust executable.

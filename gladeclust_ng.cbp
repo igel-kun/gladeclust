@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gladeclust_ng" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gladeclust_ng" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`pkg-config --cflags gtk+-2.0 gmodule-export-2.0`" />
+					<Add option="`pkg-config --cflags gtkmm-2.4`" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config --libs gtk+-2.0 gmodule-export-2.0`" />
+					<Add option="`pkg-config --libs gtkmm-2.4`" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/gladeclust_ng" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CMakeLists.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="README">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="create_clustering.ui" />
+		<Unit filename="gcclust.ui" />
+		<Unit filename="src/cclust.h" />
+		<Unit filename="src/cclust_pthread.h" />
+		<Unit filename="src/edit_clusterings.cpp" />
+		<Unit filename="src/edit_clusterings.hpp" />
+		<Unit filename="src/gcclust_window.cpp" />
+		<Unit filename="src/gcclust_window.hpp" />
+		<Unit filename="src/gladeclust.cpp" />
+		<Unit filename="src/globals.hpp" />
+		<Unit filename="src/timer.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
